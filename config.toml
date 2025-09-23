@@ -9,6 +9,7 @@ disableKinds = [
 defaultContentLanguage = "en"
 theme = "hugo-scroll"
 title = "Jane Doe - Nutrition Coach & Chef Consultant"
+publishDir = "docs"
 
 [params]
 favicon = "apple-touch-icon.png"
