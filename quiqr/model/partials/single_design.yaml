@@ -1,35 +1,46 @@
 ---
-file: data/design.json
+file: config.toml
 hidePreviewIcon: true
 title: Design
 fields:
-  - key: "primary_font"
-    title: "Main Text Font"
-    type: "font-picker"
-    tip: "choose your font"
-    limit: 50
-    categories:
-      - sans-serif
+  - key: params
+    group: params
+    type: pull
+    fields:
 
-  - key: "headings_font"
-    title: "Headings Font"
-    type: "font-picker"
-    tip: "choose your font"
-    limit: 300
+      - key: colors
+        group: colors
+        type: pull
+        fields:
 
-  - key: primary_color
-    type: color
-    autosave: true
-
-  - key: primary_color_darker
-    type: color
-    autosave: true
-
-  - key: secondary_color
-    type: color
-    autosave: true
-
-  - key: secondary_color_darker
-    type: color
-    autosave: true
+          - key: cover_text_color
+            type: color
+            autosave: true
+          - key: highlight
+            type: color
+            autosave: true
+          - key: highlight_inverse_contrast
+            type: color
+            autosave: true
+          - key: sticky_menu_text_color
+            type: color
+            autosave: true
+          - key: section_light_text_color
+            type: color
+            autosave: true
+          - key: section_light_bg_color
+            type: color
+            autosave: true
+          - key: section_dark_bg_color
+            type: color
+            autosave: true
+          - key: section_uni_code_bg_color
+            type: color
+            autosave: true
+          - key: footer_color_background
+            type: color
+            autosave: true
+          - key: footer_color
+            type: color
+            autosave: true
 
